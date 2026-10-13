@@ -1,0 +1,16 @@
+{
+  "name": "@flightpilot/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohammadWasi/flightpilot.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/MohammadWasi/flightpilot/issues"
+  }
+}

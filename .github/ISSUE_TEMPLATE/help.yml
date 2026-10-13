@@ -1,0 +1,22 @@
+name: Help with setup or usage
+description: Ask a question after checking the README and guides.
+title: 'Help: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read SUPPORT.md first. This is a public community support channel, not airline support. Use fictional examples and redact logs. Never share .env files, credentials, passenger identities, passport/card details, or real booking records.
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do?
+      description: Explain the task and where you got stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Setup and what you tried
+      description: Include the commit or version, OS, Node/pnpm versions, provider mode, relevant commands, and documentation you followed. Share only redacted errors.
+    validations:
+      required: true

@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible problem using simulation or test data.
+title: 'Bug: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Search existing issues first. Issues are public: never include passenger identities, passport/card details, real booking records, tokens, encryption keys, or .env contents. Report vulnerabilities privately through SECURITY.md.
+  - type: input
+    id: revision
+    attributes:
+      label: Commit or version
+      description: The commit SHA, tag, or branch you tested.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node.js and pnpm versions, browser or MCP client, and provider mode. Do not include credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest repeatable example using fictional data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include relevant errors or screenshots only after reviewing and redacting them.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I reviewed this report for secrets and personal or real booking data.
+          required: true

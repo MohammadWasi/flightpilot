@@ -1,0 +1,37 @@
+# Dependencies and build products
+node_modules/
+.next/
+dist/
+build/
+*.tsbuildinfo
+apps/web/next-env.d.ts
+.pnpm-store/
+.cache/
+
+# Secrets and local databases: only the example belongs in Git
+.env*
+!.env.example
+.data*/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Test output and operational logs
+coverage/
+playwright-report/
+test-results/
+blob-report/
+*.log
+
+# Editor and operating system state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest a focused improvement to FlightPilot.
+title: 'Feature: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues before posting. FlightPilot currently supports local simulation and Duffel test mode. Keep all examples fictional; do not include secrets, passenger identities, payment details, or real bookings.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Who encounters this problem, and what are they trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the behavior you would like and how we could verify it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and tradeoffs
+      description: Mention workarounds, affected provider capabilities, or compatibility concerns, if known.

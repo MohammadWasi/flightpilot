@@ -1,0 +1,72 @@
+{
+  "name": "flightpilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "build": "pnpm --filter @flightpilot/web build",
+    "start": "tsx scripts/start.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "setup:agents": "tsx scripts/setup-agents.ts",
+    "doctor": "tsx scripts/doctor.ts",
+    "mcp": "tsx apps/mcp-server/src/index.ts",
+    "mcp:http": "tsx apps/mcp-server/src/http.ts",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "licenses:generate": "tsx scripts/third-party-notices.ts",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "decimal.js": "^10.6.0",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "0.45.4",
+    "luxon": "^3.7.2",
+    "pg": "^8.16.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/luxon": "^3.7.1",
+    "@types/node": "^24.10.1",
+    "@types/pg": "^8.16.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "jiti": "2.7.0",
+    "prettier": "3.9.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "8.71.1",
+    "vitest": "^4.0.18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohammadWasi/flightpilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MohammadWasi/flightpilot/issues"
+  },
+  "description": "MCP-first flight search and user-approved test checkout for Codex and Claude.",
+  "homepage": "https://github.com/MohammadWasi/flightpilot#readme",
+  "keywords": [
+    "mcp",
+    "flight-search",
+    "typescript",
+    "codex",
+    "claude",
+    "duffel"
+  ]
+}
