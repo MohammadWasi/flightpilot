@@ -8,7 +8,6 @@ The source is available under the [MIT license](LICENSE). You can run, study, mo
 
 [![M8ven Score](https://m8ven.ai/badge/mcp/mohammadwasi-flightpilot-4owxjj)](https://m8ven.ai/mcp/mohammadwasi-flightpilot-4owxjj?s=readme)
 
-
 ## Run locally
 
 Use Node **24 LTS** and the exact pnpm version pinned in `package.json` (**11.25.0**). Clone the source and install the locked dependencies:
