@@ -26,7 +26,7 @@
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
   },
   "dependencies": {
-    "@electric-sql/pglite": "^0.3.14",
+    "@electric-sql/pglite": "^0.5.9",
     "@modelcontextprotocol/sdk": "1.32.1",
     "decimal.js": "^10.6.0",
     "dotenv": "^18.0.7",
