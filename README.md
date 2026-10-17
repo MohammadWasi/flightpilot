@@ -6,6 +6,9 @@ The source is available under the [MIT license](LICENSE). You can run, study, mo
 
 **This build is for local simulation and Duffel's test environment. It is not ready for production travel sales.** The default fares, schedules and booking references are clearly labelled synthetic. The Duffel adapter calls the documented provider API when supplied with a test token; no provider credentials were supplied during this build, so authenticated supplier search or booking has not been verified. Live tokens and real-money booking are disabled.
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/mohammadwasi-flightpilot-4owxjj)](https://m8ven.ai/mcp/mohammadwasi-flightpilot-4owxjj?s=readme)
+
+
 ## Run locally
 
 Use Node **24 LTS** and the exact pnpm version pinned in `package.json` (**11.25.0**). Clone the source and install the locked dependencies:
