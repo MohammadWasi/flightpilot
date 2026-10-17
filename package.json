@@ -26,10 +26,10 @@
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
   },
   "dependencies": {
-    "@electric-sql/pglite": "^0.3.14",
+    "@electric-sql/pglite": "^0.5.9",
     "@modelcontextprotocol/sdk": "1.32.1",
     "decimal.js": "^10.6.0",
-    "dotenv": "^17.2.3",
+    "dotenv": "^18.0.7",
     "drizzle-orm": "0.45.4",
     "luxon": "^3.7.2",
     "pg": "^8.16.3",
